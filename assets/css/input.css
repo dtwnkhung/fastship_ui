@@ -1,0 +1,6 @@
+@import url("./common.css");
+@import url("./home-page.css");
+@import url("./swiper-custom.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

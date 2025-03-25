@@ -1,0 +1,18 @@
+/* Custom styles for the categories swiper */
+.categories-swiper {
+  padding: 20px 0 50px;
+  width: 100%;
+}
+
+.categories-swiper .swiper-button-next,
+.categories-swiper .swiper-button-prev {
+  color: #333;
+}
+
+.categories-swiper .swiper-pagination-bullet-active {
+  background-color: #333;
+}
+
+.swiper-slide {
+  height: auto;
+}
