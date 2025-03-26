@@ -318,8 +318,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     popularCategories.forEach((category) => {
       categoriesSlidesHTML += `
-        <div class="swiper-slide">
-          <div class="rounded-2xl bg-white p-4 flex flex-col gap-8 hover:shadow-2xl transition-all w-full">
+        <div class="swiper-slide rounded-2xl">
+          <div class="rounded-2xl bg-white p-4 flex flex-col gap-8 hover:shadow-xl transition-all w-full cursor-pointer">
             <img src="${category.image}" loading="lazy" class="w-full" alt="Food Category" />
             <div class="flex flex-col gap-1 items-center justify-center">
               <h3 class="font-medium text-lg">${category.title}</h3>
@@ -730,11 +730,11 @@ document.addEventListener("DOMContentLoaded", function () {
         spaceBetween: 20,
       },
       1024: {
-        slidesPerView: 3.5,
+        slidesPerView: 2.7,
         spaceBetween: 20,
       },
       1280: {
-        slidesPerView: 3.5,
+        slidesPerView: 3.2,
         spaceBetween: 20,
       },
       1536: {
