@@ -94,7 +94,7 @@
       <div
         class="top-bar bg-[#191720] px-4 lg:px-6 xl:px-10 2xl:px-40 3xl:px-60 4xl:px-80 py-3"
       >
-        <div class="flex items-center justify-between">
+        <div class="flex items-center justify-between flex-col md:flex-row">
           <div class="text-white text-sm flex items-center gap-2">
             <img src="./assets/icons/map_top_bar_icon.svg" class="w-6 h-6" />
             <span>Regent Street, v, A4201, London</span>
@@ -118,12 +118,12 @@
             <img
               src="./assets/images/logo_main.svg"
               alt="FastShipHu Logo"
-              class="h-8"
+              class="h-6 md:h-8"
             />
           </a>
           <div class="flex items-center gap-4">
             <span
-              class="h-[66px] w-[66px] border-l border-r border-solid border-black/05 flex"
+              class="h-[66px] w-[50px] border-l border-r border-solid border-black/05 flex"
             >
               <img src="./assets/icons/shopping_bag_icon.svg" class="m-auto" />
             </span>
@@ -153,7 +153,7 @@
         <div class="lg:max-w-[530px] 2xl:max-w-[unset] flex flex-col gap-6">
           <span class="text-primary text-xl">Good evening</span>
           <h1
-            class="text-[64px] leading-[1.3] font-semibold inline-flex flex-col items-start"
+            class="text-5xl leading-[1.5] md:text-[64px] md:leading-[1.3] font-semibold inline-flex flex-col items-start"
           >
             <span class="relative">
               Your Favorite
@@ -204,7 +204,7 @@
             </span>
           </div>
         </div>
-        <div class="border-b-4 border-dark inline-flex flex-1">
+        <div class="border-b-4 border-dark inline-flex flex-1 mt-5 md:mt-0">
           <img src="./assets/images/banner_img.svg" class="w-full" />
         </div>
       </div>
@@ -212,7 +212,9 @@
     <section id="popular-category" class="py-12">
       <div class="flex flex-col gap-10">
         <div class="px-4 lg:px-6 xl:px-10 2xl:px-40 3xl:px-60 4xl:px-80">
-          <h2 class="capitalize text-4xl font-medium">popular categories</h2>
+          <h2 class="capitalize text-3xl md:text-4xl font-medium">
+            popular categories
+          </h2>
         </div>
         <div
           class="swiper popular-categories-slider px-4 lg:px-6 xl:px-10 2xl:px-40 3xl:px-60 4xl:px-80"
@@ -228,14 +230,16 @@
         <div
           class="flex items-center justify-between px-4 lg:px-6 xl:px-10 2xl:px-40 3xl:px-60 4xl:px-80"
         >
-          <h2 class="capitalize text-4xl font-medium">Fastest delivery</h2>
+          <h2 class="capitalize text-3xl md:text-4xl font-medium">
+            Fastest delivery
+          </h2>
           <a href="#" class="flex items-center text-primary"
             >View all dishes
-            <img src="./assets/icons/up_right_icon.svg" class="w-6 h-6"
+            <img src="./assets/icons/up_right_icon.svg" class="w-5 h-5"
           /></a>
         </div>
         <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4 lg:px-6 xl:px-10 2xl:px-40 3xl:px-60 4xl:px-80"
+          class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 px-4 lg:px-6 xl:px-10 2xl:px-40 3xl:px-60 4xl:px-80"
         >
           <a href="#" class="fd-item relative block">
             <img
@@ -243,14 +247,14 @@
               class="aspect-square rounded-2xl object-cover w-full"
             />
             <div
-              class="p-2 absolute top-0 left-0 right-0 flex items-center justify-between z-10"
+              class="p-2 absolute top-0 left-0 right-0 flex items-start md:items-center justify-between z-10"
             >
               <span class="w-9 h-9 flex rounded-full bg-black/10">
                 <img src="./assets/icons/heart_line_icon.svg" class="m-auto" />
               </span>
-              <div class="flex items-center gap-1">
+              <div class="flex items-center flex-col md:flex-row gap-1">
                 <span
-                  class="bg-secondary text-white rounded-full px-3 py-1.5 flex items-center text-sm gap-1"
+                  class="bg-secondary text-white rounded-full py-1 px-2.5 md:w-auto w-full md:px-3 md:py-1.5 flex items-center text-sm gap-1"
                 >
                   <img
                     src="./assets/icons/ticket_star_icon.svg"
@@ -259,14 +263,16 @@
                   20% off
                 </span>
                 <span
-                  class="bg-warning text-white rounded-full px-3 py-1.5 flex items-center text-sm gap-1"
+                  class="bg-warning text-white rounded-full py-1 px-2.5 md:px-3 md:py-1.5 flex items-center text-sm gap-1"
                 >
                   <img src="./assets/icons/clock_icon.svg" class="w-6 h-6" />
                   15-20 min
                 </span>
               </div>
             </div>
-            <div class="flex items-center justify-between gap-1.5 mt-3 mb-1">
+            <div
+              class="flex md:items-center items-start justify-between flex-col md:flex-row gap-1.5 mt-1.5 md:mt-3 mb-1"
+            >
               <span class="flex items-center capitalize gap-1.5 text-muted">
                 <img class="w-7 h-7" src="./assets/images/food_logo_1.webp" />
                 Foodworld
@@ -283,11 +289,13 @@
               </span>
             </div>
             <div class="flex flex-col">
-              <h3 class="font-medium text-[22px] leading-snug capitalize">
+              <h3
+                class="font-medium text-lg md:text-[22px] leading-snug capitalize"
+              >
                 Cheese Burger
               </h3>
               <div class="flex items-center justify-between font-medium">
-                <div class="flex items-center gap-1 text-lg">
+                <div class="flex items-center gap-1 text-base md:text-lg">
                   <span class="text-muted line-through">$3.30</span>
                   <span class="text-secondary">$2.20</span>
                 </div>
@@ -307,14 +315,14 @@
               class="aspect-square rounded-2xl object-cover w-full"
             />
             <div
-              class="p-2 absolute top-0 left-0 right-0 flex items-center justify-between z-10"
+              class="p-2 absolute top-0 left-0 right-0 flex items-start md:items-center justify-between z-10"
             >
               <span class="w-9 h-9 flex rounded-full bg-black/10">
                 <img src="./assets/icons/heart_line_icon.svg" class="m-auto" />
               </span>
-              <div class="flex items-center gap-1">
+              <div class="flex items-center flex-col md:flex-row gap-1">
                 <span
-                  class="bg-secondary text-white rounded-full px-3 py-1.5 flex items-center text-sm gap-1"
+                  class="bg-secondary text-white rounded-full py-1 px-2.5 md:w-auto w-full md:px-3 md:py-1.5 flex items-center text-sm gap-1"
                 >
                   <img
                     src="./assets/icons/ticket_star_icon.svg"
@@ -323,14 +331,16 @@
                   20% off
                 </span>
                 <span
-                  class="bg-warning text-white rounded-full px-3 py-1.5 flex items-center text-sm gap-1"
+                  class="bg-warning text-white rounded-full py-1 px-2.5 md:px-3 md:py-1.5 flex items-center text-sm gap-1"
                 >
                   <img src="./assets/icons/clock_icon.svg" class="w-6 h-6" />
                   15-20 min
                 </span>
               </div>
             </div>
-            <div class="flex items-center justify-between gap-1.5 mt-3 mb-1">
+            <div
+              class="flex md:items-center items-start justify-between flex-col md:flex-row gap-1.5 mt-1.5 md:mt-3 mb-1"
+            >
               <span class="flex items-center capitalize gap-1.5 text-muted">
                 <img class="w-7 h-7" src="./assets/images/food_logo_1.webp" />
                 Foodworld
@@ -350,11 +360,13 @@
               </span>
             </div>
             <div class="flex flex-col">
-              <h3 class="font-medium text-[22px] leading-snug capitalize">
+              <h3
+                class="font-medium text-lg md:text-[22px] leading-snug capitalize"
+              >
                 Cheese Burger
               </h3>
               <div class="flex items-center justify-between font-medium">
-                <div class="flex items-center gap-1 text-lg">
+                <div class="flex items-center gap-1 text-base md:text-lg">
                   <span class="text-muted line-through">$3.30</span>
                   <span class="text-secondary">$2.20</span>
                 </div>
@@ -374,14 +386,14 @@
               class="aspect-square rounded-2xl object-cover w-full"
             />
             <div
-              class="p-2 absolute top-0 left-0 right-0 flex items-center justify-between z-10"
+              class="p-2 absolute top-0 left-0 right-0 flex items-start md:items-center justify-between z-10"
             >
               <span class="w-9 h-9 flex rounded-full bg-black/10">
                 <img src="./assets/icons/heart_line_icon.svg" class="m-auto" />
               </span>
-              <div class="flex items-center gap-1">
+              <div class="flex items-center flex-col md:flex-row gap-1">
                 <span
-                  class="bg-secondary text-white rounded-full px-3 py-1.5 flex items-center text-sm gap-1"
+                  class="bg-secondary text-white rounded-full py-1 px-2.5 md:w-auto w-full md:px-3 md:py-1.5 flex items-center text-sm gap-1"
                 >
                   <img
                     src="./assets/icons/ticket_star_icon.svg"
@@ -390,14 +402,16 @@
                   20% off
                 </span>
                 <span
-                  class="bg-warning text-white rounded-full px-3 py-1.5 flex items-center text-sm gap-1"
+                  class="bg-warning text-white rounded-full py-1 px-2.5 md:px-3 md:py-1.5 flex items-center text-sm gap-1"
                 >
                   <img src="./assets/icons/clock_icon.svg" class="w-6 h-6" />
                   15-20 min
                 </span>
               </div>
             </div>
-            <div class="flex items-center justify-between gap-1.5 mt-3 mb-1">
+            <div
+              class="flex md:items-center items-start justify-between flex-col md:flex-row gap-1.5 mt-1.5 md:mt-3 mb-1"
+            >
               <span class="flex items-center capitalize gap-1.5 text-muted">
                 <img class="w-7 h-7" src="./assets/images/food_logo_1.webp" />
                 Foodworld
@@ -414,11 +428,13 @@
               </span>
             </div>
             <div class="flex flex-col">
-              <h3 class="font-medium text-[22px] leading-snug capitalize">
+              <h3
+                class="font-medium text-lg md:text-[22px] leading-snug capitalize"
+              >
                 Cheese Burger
               </h3>
               <div class="flex items-center justify-between font-medium">
-                <div class="flex items-center gap-1 text-lg">
+                <div class="flex items-center gap-1 text-base md:text-lg">
                   <span class="text-muted line-through">$3.30</span>
                   <span class="text-secondary">$2.20</span>
                 </div>
@@ -438,14 +454,14 @@
               class="aspect-square rounded-2xl object-cover w-full"
             />
             <div
-              class="p-2 absolute top-0 left-0 right-0 flex items-center justify-between z-10"
+              class="p-2 absolute top-0 left-0 right-0 flex items-start md:items-center justify-between z-10"
             >
               <span class="w-9 h-9 flex rounded-full bg-black/10">
                 <img src="./assets/icons/heart_line_icon.svg" class="m-auto" />
               </span>
-              <div class="flex items-center gap-1">
+              <div class="flex items-center flex-col md:flex-row gap-1">
                 <span
-                  class="bg-secondary text-white rounded-full px-3 py-1.5 flex items-center text-sm gap-1"
+                  class="bg-secondary text-white rounded-full py-1 px-2.5 md:w-auto w-full md:px-3 md:py-1.5 flex items-center text-sm gap-1"
                 >
                   <img
                     src="./assets/icons/ticket_star_icon.svg"
@@ -454,14 +470,16 @@
                   20% off
                 </span>
                 <span
-                  class="bg-warning text-white rounded-full px-3 py-1.5 flex items-center text-sm gap-1"
+                  class="bg-warning text-white rounded-full py-1 px-2.5 md:px-3 md:py-1.5 flex items-center text-sm gap-1"
                 >
                   <img src="./assets/icons/clock_icon.svg" class="w-6 h-6" />
                   15-20 min
                 </span>
               </div>
             </div>
-            <div class="flex items-center justify-between gap-1.5 mt-3 mb-1">
+            <div
+              class="flex md:items-center items-start justify-between flex-col md:flex-row gap-1.5 mt-1.5 md:mt-3 mb-1"
+            >
               <span class="flex items-center capitalize gap-1.5 text-muted">
                 <img class="w-7 h-7" src="./assets/images/food_logo_1.webp" />
                 Foodworld
@@ -481,11 +499,13 @@
               </span>
             </div>
             <div class="flex flex-col">
-              <h3 class="font-medium text-[22px] leading-snug capitalize">
+              <h3
+                class="font-medium text-lg md:text-[22px] leading-snug capitalize"
+              >
                 Cheese Burger
               </h3>
               <div class="flex items-center justify-between font-medium">
-                <div class="flex items-center gap-1 text-lg">
+                <div class="flex items-center gap-1 text-base md:text-lg">
                   <span class="text-muted line-through">$3.30</span>
                   <span class="text-secondary">$2.20</span>
                 </div>
@@ -507,31 +527,38 @@
     </div>
     <section id="discount" class="py-6 flex flex-col gap-10">
       <div
-        class="flex items-center justify-between px-4 lg:px-6 xl:px-10 2xl:px-40 3xl:px-60 4xl:px-80"
+        class="flex items-start md:items-center justify-between flex-col md:flex-row px-4 lg:px-6 xl:px-10 2xl:px-40 3xl:px-60 4xl:px-80 gap-4 md:gap-0"
       >
-        <h2 class="capitalize text-4xl font-medium">Discount Guaranteed! 👌</h2>
-        <div class="flex items-center gap-6">
+        <h2 class="capitalize text-3xl md:text-4xl font-medium">
+          Discount Guaranteed! 👌
+        </h2>
+        <div class="flex items-center gap-3 md:gap-6">
           <a
             href="#"
-            class="capitalize text-muted hover:text-dark hover:font-medium"
+            class="capitalize text-muted hover:text-dark hover:font-medium text-sm md:text-base"
             >Vegan</a
           >
-          <a href="#" class="capitalize font-medium text-dark"
+          <a
+            href="#"
+            class="capitalize font-medium text-dark text-sm md:text-base"
             >Pizza & Fast food</a
           >
           <a
             href="#"
-            class="capitalize text-muted hover:text-dark hover:font-medium"
+            class="capitalize text-muted hover:text-dark hover:font-medium text-sm md:text-base"
             >Sushi</a
           >
           <a
             href="#"
-            class="capitalize text-muted hover:text-dark hover:font-medium"
+            class="capitalize text-muted hover:text-dark hover:font-medium text-sm md:text-base"
             >others</a
           >
-          <a href="#" class="capitalize flex items-center text-primary">
+          <a
+            href="#"
+            class="capitalize flex items-center text-primary text-sm md:text-base"
+          >
             View all dishes
-            <img src="./assets/icons/up_right_icon.svg" class="w-6 h-6" />
+            <img src="./assets/icons/up_right_icon.svg" class="w-5 h-5" />
           </a>
         </div>
       </div>
@@ -546,7 +573,7 @@
     <section id="top-rated" class="py-12">
       <div class="flex flex-col gap-10">
         <div class="px-4 lg:px-6 xl:px-10 2xl:px-40 3xl:px-60 4xl:px-80">
-          <h2 class="capitalize text-4xl font-medium">Top-rated</h2>
+          <h2 class="capitalize text-3xl md:text-4xl font-medium">Top-rated</h2>
         </div>
         <div
           class="swiper top-rated-slider px-4 lg:px-6 xl:px-10 2xl:px-40 3xl:px-60 4xl:px-80"
@@ -562,10 +589,10 @@
         <div
           class="flex items-center justify-between px-4 lg:px-6 xl:px-10 2xl:px-40 3xl:px-60 4xl:px-80"
         >
-          <h2 class="text-4xl font-medium">Local favorites</h2>
+          <h2 class="text-3xl md:text-4xl font-medium">Local favorites</h2>
           <a href="#" class="flex items-center text-primary">
             View all dishes
-            <img src="./assets/icons/up_right_icon.svg" class="w-6 h-6" />
+            <img src="./assets/icons/up_right_icon.svg" class="w-5 h-5" />
           </a>
         </div>
 
@@ -590,18 +617,18 @@
             class="w-full"
           />
           <div
-            class="absolute left-0 right-0 top-0 pt-16 pb-10 px-10 flex flex-col justify-between h-full"
+            class="absolute left-0 right-0 top-0 md:pt-16 md:pb-10 md:px-10 flex flex-col gap-4 md:gap-0 justify-start md:justify-between h-full px-4 pt-4"
           >
             <div class="flex flex-col justify-between items-start gap-4">
               <p class="text-muted">Signup as a business</p>
-              <h3 class="text-4xl font-medium">
+              <h3 class="text-3xl md:text-4xl font-medium">
                 Partner<br />
                 with us
               </h3>
             </div>
             <div>
               <button
-                class="inline-flex py-4 px-6 gap-1.5 bg-primary text-white rounded-full capitalize"
+                class="inline-flex py-2 px-4 md:py-4 md:px-6 gap-1.5 bg-primary text-white rounded-full capitalize text-sm md:text-base"
               >
                 get started
                 <img
@@ -619,18 +646,18 @@
             class="w-full"
           />
           <div
-            class="absolute left-0 right-0 top-0 pt-16 pb-10 px-10 flex flex-col justify-between h-full"
+            class="absolute left-0 right-0 top-0 md:pt-16 md:pb-10 md:px-10 flex flex-col gap-4 md:gap-0 justify-start md:justify-between h-full px-4 pt-4"
           >
             <div class="flex flex-col justify-between items-start gap-4">
               <p class="text-muted">Signup as a rider</p>
-              <h3 class="text-4xl font-medium">
+              <h3 class="text-3xl md:text-4xl font-medium">
                 Ride<br />
                 with us
               </h3>
             </div>
             <div>
               <button
-                class="inline-flex py-4 px-6 gap-1.5 bg-primary text-white rounded-full capitalize"
+                class="inline-flex py-2 px-4 md:py-4 md:px-6 gap-1.5 bg-primary text-white rounded-full capitalize text-sm md:text-base"
               >
                 get started
                 <img
@@ -648,18 +675,18 @@
       class="py-12 px-4 lg:px-6 xl:px-10 2xl:px-40 3xl:px-60 4xl:px-80"
     >
       <div class="flex flex-col gap-10">
-        <h2 class="text-4xl font-medium">How we work</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <h2 class="text-3xl md:text-4xl font-medium">How we work</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
           <div
             class="rounded-2xl px-4 py-6 flex flex-col bg-[#FFF8ED] justify-between"
           >
             <div class="flex flex-col gap-3">
               <h3
-                class="font-medium text-[28px] leading-snug text-custom-warning"
+                class="font-medium text-2xl leading-[1.5] md:text-[28px] md:leading-snug text-custom-warning"
               >
                 It's 100% risk-free
               </h3>
-              <p class="text-muted">
+              <p class="text-muted text-sm md:text-base">
                 There's no fee for joining Fast ship hu. You can quit whenever,
                 for any reason. When you earn, we earn.z
               </p>
@@ -675,11 +702,11 @@
           >
             <div class="flex flex-col gap-3">
               <h3
-                class="font-medium text-[28px] leading-snug text-custom-primary"
+                class="font-medium text-2xl leading-[1.5] md:text-[28px] md:leading-snug text-custom-primary"
               >
                 Power online sales with same house deliveries
               </h3>
-              <p class="text-muted">
+              <p class="text-muted text-sm md:text-base">
                 Add fast Drive logistics for Fast ship hu, affordable express
                 deliveries for ecommerce .
               </p>
@@ -694,10 +721,12 @@
             class="rounded-2xl px-4 py-6 flex flex-col bg-[#EAF7FC] justify-between"
           >
             <div class="flex flex-col gap-3">
-              <h3 class="font-medium text-[28px] leading-snug text-info">
+              <h3
+                class="font-medium text-2xl leading-[1.5] md:text-[28px] md:leading-snug text-info"
+              >
                 We do the heavy lifting
               </h3>
-              <p class="text-muted">
+              <p class="text-muted text-sm md:text-base">
                 We handle ads, payments, delivery and support.
               </p>
             </div>
@@ -711,10 +740,12 @@
             class="rounded-2xl px-4 py-6 flex flex-col bg-[#FFF0EE] gap-10 justify-between"
           >
             <div class="flex flex-col gap-3">
-              <h3 class="font-medium text-[28px] leading-snug text-danger">
+              <h3
+                class="font-medium text-2xl leading-[1.5] md:text-[28px] md:leading-snug text-danger"
+              >
                 Boost your sale
               </h3>
-              <p class="text-muted">
+              <p class="text-muted text-sm md:text-base">
                 91% of Wolt orders are extra sales you wouldn’t otherwise get.
               </p>
             </div>
@@ -731,13 +762,15 @@
       id="cta-download-app"
       class="px-4 lg:px-6 xl:px-10 2xl:px-40 3xl:px-60 4xl:px-80"
     >
-      <div class="bg-[#F1EFE9] rounded-3xl pl-12 pt-10 pr-4">
-        <div class="flex items-center gap-16">
+      <div
+        class="bg-[#F1EFE9] rounded-3xl px-4 pt-10 md:pl-12 md:pt-10 md:pr-4"
+      >
+        <div class="flex flex-col md:items-center gap-16">
           <div class="flex flex-col gap-8 lg:max-w-[454px]">
-            <h2 class="text-[44px] leading-[1.5] font-medium">
+            <h2 class="text-3xl md:text-[44px] leading-[1.5] font-medium">
               Honey, we’re not cooking tonight
             </h2>
-            <p class="text-muted text-lg">
+            <p class="text-muted text-base md:text-lg">
               Get the Apple-awarded Wolt app and choose from 40,000 restaurants
               and hundreds of stores in 20+ countries. Discover and get what you
               want – our courier partners bring it to you.
@@ -771,9 +804,9 @@
     </section>
     <section
       id="cta-order"
-      class="bg-[#f2efe9] flex justify-center px-4 lg:px-6 xl:px-10 2xl:px-40 3xl:px-60 4xl:px-80"
+      class="bg-[#f2efe9] flex justify-center px-4 lg:px-6 xl:px-10 2xl:px-40 3xl:px-60 4xl:px-80 md:pb-0 pb-6"
     >
-      <div class="flex items-center">
+      <div class="flex flex-col md:flex-row md:items-center">
         <div class="lg:max-w-[554px] lg:-mr-16 relative z-10">
           <img
             src="./assets/images/cta_order_image.webp"
@@ -781,7 +814,9 @@
             class="w-full"
           />
         </div>
-        <div class="py-10 px-16 rounded-xl bg-white flex flex-col gap-8">
+        <div
+          class="p-8 md:py-10 md:px-16 rounded-xl bg-white flex flex-col gap-8"
+        >
           <h2 class="text-4xl font-medium text-center">
             From kitchens everywhere,<br />
             to your dining table.
@@ -790,7 +825,9 @@
             Fusce volutpat lectus et nisl consectetur finibus. In vitae
             scelerisque augue, in varius eros.
           </p>
-          <div class="flex items-center justify-between">
+          <div
+            class="flex flex-col gap-6 md:gap-0 md:flex-row md:items-center justify-between"
+          >
             <div class="flex items-center gap-2">
               <img
                 src="./assets/icons/kitchen_cta_icon_1.svg"
@@ -802,7 +839,7 @@
                 Discounts
               </h3>
             </div>
-            <div class="w-[1px] h-10 bg-gray-600"></div>
+            <div class="w-[1px] h-10 bg-gray-600 md:block hidden"></div>
             <div class="flex items-center gap-2">
               <img
                 src="./assets/icons/kitchen_cta_icon_2.svg"
@@ -814,7 +851,7 @@
                 Tracing
               </h3>
             </div>
-            <div class="w-[1px] h-10 bg-gray-600"></div>
+            <div class="w-[1px] h-10 bg-gray-600 md:block hidden"></div>
             <div class="flex items-center gap-2">
               <img
                 src="./assets/icons/kitchen_cta_icon_3.svg"
@@ -846,7 +883,7 @@
       class="py-12 px-4 lg:px-6 xl:px-10 2xl:px-40 3xl:px-60 4xl:px-80"
     >
       <div class="flex flex-col gap-10">
-        <h2 class="text-4xl font-medium">Local favorites</h2>
+        <h2 class="text-3xl md:text-4xl font-medium">Local favorites</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
           <a
             href="#"
@@ -914,18 +951,18 @@
     </section>
     <footer id="footer">
       <div
-        class="py-16 bg-[#f4f4f4] px-4 lg:px-6 xl:px-10 2xl:px-40 3xl:px-60 4xl:px-80"
+        class="py-10 md:py-16 bg-[#f4f4f4] px-4 lg:px-6 xl:px-10 2xl:px-40 3xl:px-60 4xl:px-80"
       >
         <div class="container mx-auto">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-            <div class="flex flex-col gap-6">
+          <div class="grid grid-cols-1 md:gap-0 md:grid-cols-2 lg:grid-cols-4">
+            <div class="flex flex-col gap-2.5 md:gap-6 mt-4 md:mt-0">
               <img src="./assets/images/logo_main.svg" class="w-[214px]" />
               <p>
                 Company # 490039-445,<br />Registered with<br />House of
                 companies.
               </p>
             </div>
-            <div class="flex flex-col gap-6">
+            <div class="flex flex-col gap-2.5 md:gap-6 mt-4 md:mt-0">
               <h3 class="text-lg font-medium">Legal Pages</h3>
               <ul class="space-y-2">
                 <li>
@@ -958,7 +995,7 @@
                 </li>
               </ul>
             </div>
-            <div class="flex flex-col gap-6">
+            <div class="flex flex-col gap-2.5 md:gap-6 mt-4 md:mt-0">
               <h3 class="text-lg font-medium">Important Links</h3>
               <ul class="space-y-2">
                 <li>
@@ -991,7 +1028,7 @@
                 </li>
               </ul>
             </div>
-            <div class="flex flex-col gap-6">
+            <div class="flex flex-col gap-2.5 md:gap-6 mt-4 md:mt-0">
               <h3 class="text-lg font-medium">
                 Get Exclusive Deals in your Inbox
               </h3>
@@ -1010,11 +1047,13 @@
                     Subscribe
                   </button>
                 </div>
-                <p class="my-2 text-sm">
+                <p class="my-2 text-sm text-center md:text-start">
                   we wont spam, read our
                   <a href="#" class="underline text-secondary">email policy</a>
                 </p>
-                <div class="flex items-center gap-3">
+                <div
+                  class="flex items-center gap-3 justify-center md:justify-start"
+                >
                   <span class="w-5 h-5 flex bg-primary/20 rounded-full">
                     <img
                       src="./assets/icons/fb_icon.svg"
@@ -1055,10 +1094,14 @@
         class="copyright bg-dark py-4 text-white px-4 lg:px-6 xl:px-10 2xl:px-40 3xl:px-60 4xl:px-80"
       >
         <div
-          class="container mx-auto flex flex-wrap flex-col lg:flex-nowrap lg:flex-row items-center justify-between"
+          class="container mx-auto flex flex-wrap flex-col lg:flex-nowrap lg:flex-row items-start md:items-center justify-between"
         >
-          <p>@ Copyright 2025, All Rights Reserved.</p>
-          <div class="flex items-center gap-7">
+          <p class="md:w-auto w-full mb-4 md:mb-0">
+            @ Copyright 2025, All Rights Reserved.
+          </p>
+          <div
+            class="flex flex-col md:flex-row md:items-center gap-2 md:gap-7 md:w-auto w-full"
+          >
             <a href="#" class="transition-all hover:text-primary"
               >Privacy Policy</a
             >

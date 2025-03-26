@@ -375,7 +375,7 @@ document.addEventListener("DOMContentLoaded", function () {
               </span>
             </div>
             <div class="flex flex-col mt-3">
-              <h3 class="text-[22px] text-start leading-snug capitalize">
+              <h3 class="text-lg leading-[1.5] md:text-[22px] text-start md:leading-snug capitalize">
                 ${item.title}
               </h3>
               <div class="flex items-center justify-between font-medium">
@@ -468,7 +468,7 @@ document.addEventListener("DOMContentLoaded", function () {
               </span>
             </div>
             <div class="flex flex-col">
-              <h3 class="font-medium text-[22px] leading-snug capitalize text-start">
+              <h3 class="font-medium text-lg leading-[1.5] md:text-[22px] md:leading-snug capitalize text-start">
                 ${item.title}
               </h3>
               <div class="flex items-center justify-between font-medium">
@@ -563,7 +563,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </span>
               </div>
               <div class="flex flex-col">
-                <h3 class="font-medium text-[22px] leading-snug capitalize text-start">
+                <h3 class="font-medium text-lg leading-[1.5] md:text-[22px] md:leading-snug capitalize text-start">
                   ${item.title}
                 </h3>
                 <div class="flex items-center justify-between font-medium">
@@ -593,6 +593,10 @@ document.addEventListener("DOMContentLoaded", function () {
     slidesPerView: 1,
     spaceBetween: 16,
     breakpoints: {
+      400: {
+        slidesPerView: 2.5,
+        spaceBetween: 20,
+      },
       640: {
         slidesPerView: 2,
         spaceBetween: 20,
@@ -621,8 +625,12 @@ document.addEventListener("DOMContentLoaded", function () {
     slidesPerView: 1,
     spaceBetween: 16,
     breakpoints: {
-      640: {
+      400: {
         slidesPerView: 2.5,
+        spaceBetween: 20,
+      },
+      640: {
+        slidesPerView: 3.1,
         spaceBetween: 20,
       },
       768: {
@@ -649,6 +657,10 @@ document.addEventListener("DOMContentLoaded", function () {
     slidesPerView: 1,
     spaceBetween: 16,
     breakpoints: {
+      350: {
+        slidesPerView: 1.2,
+        spaceBetween: 20,
+      },
       640: {
         slidesPerView: 1.5,
         spaceBetween: 16,
@@ -685,6 +697,10 @@ document.addEventListener("DOMContentLoaded", function () {
     slidesPerView: 1,
     spaceBetween: 16,
     breakpoints: {
+      350: {
+        slidesPerView: 1.2,
+        spaceBetween: 20,
+      },
       640: {
         slidesPerView: 1.5,
         spaceBetween: 16,
@@ -721,6 +737,10 @@ document.addEventListener("DOMContentLoaded", function () {
     slidesPerView: 1,
     spaceBetween: 16,
     breakpoints: {
+      350: {
+        slidesPerView: 1.2,
+        spaceBetween: 20,
+      },
       640: {
         slidesPerView: 1.5,
         spaceBetween: 16,
