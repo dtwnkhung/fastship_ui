@@ -90,6 +90,56 @@
     <title>FastShipHu</title>
   </head>
   <body class="overflow-x-hidden text-theme-dark">
+    <!-- Location popover -->
+    <!-- <div
+      class="backdrop-popover fixed inset-0 bg-black/50 z-[999] h-full w-full hidden"
+    ></div> -->
+    <div id="location-popover" class="p-6 rounded-xl bg-white hidden">
+      <div class="flex flex-col gap-4">
+        <div
+          class="flex items-center justify-between pb-4 border-b-2 border-solid border-gray-300"
+        >
+          <h3 class="font-medium text-dark text-lg">Use current location</h3>
+          <span>
+            <svg
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.90878 7.98493L16.9389 16.015M16.9389 7.98493L8.90878 16.015"
+                stroke="#363853"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </span>
+        </div>
+        <h4 class="text-base text-muted">
+          Confirming your location helps us determine availability and delivery
+          fees
+        </h4>
+        <div class="w-full rounded-2xl overflow-hidden">
+          <img src="./assets/images/map_placeholder.webp" class="w-full" />
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <button
+            class="py-2.5 px-6 rounded-full text-dark bg-white hover:bg-gray-100 focus:outline-none border border-gray-300"
+          >
+            Cancel
+          </button>
+          <button
+            id="submit-location"
+            class="py-2.5 px-6 rounded-full bg-secondary hover:bg-secondary-700 w-full focus:outline-none border border-secondary hover:border-secondary-700 text-white"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Header -->
     <header>
       <div
         class="top-bar bg-[#191720] px-4 lg:px-6 xl:px-10 2xl:px-40 3xl:px-60 4xl:px-80 py-3"
@@ -98,7 +148,9 @@
           <div class="text-white text-sm flex items-center gap-2">
             <img src="./assets/icons/map_top_bar_icon.svg" class="w-6 h-6" />
             <span>Regent Street, v, A4201, London</span>
-            <span class="cursor-pointer text-secondary underline text-clifford"
+            <span
+              id="toggle-change-location"
+              class="cursor-pointer text-secondary underline"
               >Change Location</span
             >
           </div>
@@ -143,6 +195,7 @@
         </div>
       </nav>
     </header>
+    <!-- Main -->
     <main>
       <section
         id="sub-page-header"
@@ -1469,6 +1522,7 @@
         </div>
       </section>
     </main>
+    <!-- Footer -->
     <footer id="footer">
       <div
         class="py-10 md:py-16 bg-[#f4f4f4] px-4 lg:px-6 xl:px-10 2xl:px-40 3xl:px-60 4xl:px-80"
@@ -1635,6 +1689,8 @@
       </div>
     </footer>
     <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/tippy-bundle.umd.min.js"></script>
     <script src="./assets/js/cutsomer-logo-slider.js"></script>
     <script src="./assets/js/popular-categories-slider.js"></script>
     <script src="./assets/js/discount-slider.js"></script>
